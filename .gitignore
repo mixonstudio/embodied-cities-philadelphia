@@ -1,0 +1,24 @@
+# R
+.Rhistory
+.RData
+.Rproj.user/
+*.Rproj
+
+# Data (exclude raw data files that are large)
+data/raw/*.csv
+data/raw/*.xlsx
+data/raw/*.shp
+*.rds
+
+# Output files
+*.png
+*.pdf
+*.html
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Environment
+.Renviron
+
