@@ -468,6 +468,13 @@
             font-weight: 600;
             color: white;
             text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        
+        .neighborhood:hover {
+            transform: scale(1.1);
+            z-index: 10;
         }
         
         .stress-very-high { background: var(--deep-purple); }
@@ -542,11 +549,11 @@
         </header>
 
         <section class="section fade-in" data-page="01">
-            <h2 class="section-title">🔍 The Problem We Actually Solved</h2>
+            <h2 class="section-title">The Problem We Actually Solved</h2>
             <div class="archive-code">Philadelphia Case Study | 2025-2050 | Methodological Innovation</div>
             
             <div class="intro-text">
-                In 2025, Philadelphia could track 50,000 crime incidents annually but couldn't explain why Central_Central district residents felt unsafe in broad daylight. The city monitored 25,000 311 service requests but missed the daily stress of living near constant construction noise. School administrators saw 36.6% chronic absenteeism rates but didn't connect this to neighborhood-level trauma.
+                In 2025, Philadelphia could track 50,000+ crime incidents annually but couldn't explain why District 7 residents felt unsafe in broad daylight. The city monitored 25,000+ 311 service requests but missed the daily stress of living near constant construction noise. School administrators saw 36.6% chronic absenteeism rates but didn't connect this to neighborhood-level trauma.
             </div>
             
             <div class="data-insight">
@@ -557,7 +564,7 @@
             <div class="philadelphia-stats">
                 <div class="stat-card">
                     <span class="stat-number">8.4/10</span>
-                    <div class="stat-label">Baseline embodied stress in Central_Central district (2025)</div>
+                    <div class="stat-label">Baseline embodied stress in District 7 (2025)</div>
                 </div>
                 <div class="stat-card">
                     <span class="stat-number">$1.4M</span>
@@ -575,31 +582,37 @@
 
             <div class="queer-governance">
                 <div class="queer-governance-title">Queer Governance Innovation</div>
-                <p style="margin-bottom: 1rem; color: var(--text-dark);">This wasn't just about better data - it was about fundamentally shifting power. Instead of optimizing cities for productivity, we centered how spaces make different bodies feel.</p>
+                <p style="margin-bottom: 1rem; color: var(--text-dark);">Traditional city planning assumes all bodies experience space identically and optimizes for economic productivity over wellbeing. Queer governance recognizes that marginalized communities - LGBTQ+ people, people of color, disabled residents, working families - navigate urban space differently and often bear disproportionate stress from "neutral" policy decisions.</p>
+                
+                <p style="margin-bottom: 1rem; color: var(--text-dark);">Embodied sensing enables governance that acknowledges these differences and centers care over efficiency. Instead of asking "How do we maximize tax revenue?" we ask "How do different bodies feel in this space, and how can we reduce harm?"</p>
                 
                 <div class="governance-principles">
                     <div class="principle">
                         <div class="principle-title">Community Data Sovereignty</div>
-                        <div class="principle-desc">Residents own and control their neighborhood's embodied data</div>
+                        <div class="principle-desc">Residents own their neighborhood's embodied data. No corporate or government surveillance - community assemblies decide how stress data gets used.</div>
                     </div>
                     <div class="principle">
-                        <div class="principle-title">Care-Centered Budgeting</div>
-                        <div class="principle-desc">City resources allocated based on stress reduction potential</div>
+                        <div class="principle-title">Care-Centered Resource Allocation</div>
+                        <div class="principle-desc">City budget decisions based on stress reduction potential rather than economic development. Public resources flow to healing, not growth.</div>
                     </div>
                     <div class="principle">
-                        <div class="principle-title">Intersectional Analysis</div>
-                        <div class="principle-desc">Different bodies experience the same spaces differently</div>
+                        <div class="principle-title">Intersectional Impact Analysis</div>
+                        <div class="principle-desc">Policy decisions require assessment of differential impacts. A new bike lane might reduce stress for some bodies while increasing it for others.</div>
                     </div>
                     <div class="principle">
-                        <div class="principle-title">Healing Justice</div>
-                        <div class="principle-desc">Addressing neighborhood trauma through environmental design</div>
+                        <div class="principle-title">Trauma-Informed Infrastructure</div>
+                        <div class="principle-desc">Urban design that acknowledges historical harm and actively works to create healing spaces for communities that have experienced systemic violence.</div>
                     </div>
+                </div>
+                
+                <div style="background: rgba(255, 255, 255, 0.8); padding: 1.2rem; border-radius: 8px; margin-top: 1.5rem;">
+                    <p style="color: var(--text-dark); font-style: italic; font-size: 1rem;">"By 2035, Philadelphia's District 7 community assemblies included 40% LGBTQ+ residents and 65% people of color. When transgender residents' stress data showed elevated anxiety near certain intersections, the community voted to fund improved lighting and safe waiting areas at bus stops. The data made marginalized experiences visible and actionable in ways traditional planning never could."</p>
                 </div>
             </div>
         </section>
 
         <section class="section fade-in" data-page="02">
-            <h2 class="section-title">📊 Methodology: Building on Proven Models</h2>
+            <h2 class="section-title">Methodology: Building on Proven Models</h2>
             <div class="archive-code">Evidence Base | Barcelona Superblocks + Community Health Workers + Medellín Urban Acupuncture</div>
             
             <div class="intro-text">
@@ -609,45 +622,45 @@
             <div class="methodology-grid">
                 <div class="method-card">
                     <div class="method-title">Barcelona Superblocks Model</div>
-                    <div class="method-desc">Environmental interventions achieved 25% air pollution reduction, improved resident well-being, sleep quality, and social interaction. We adapted their tactical urbanism approach.</div>
+                    <div class="method-desc">Environmental interventions achieved 25% air pollution reduction, improved resident well-being, sleep quality, and social interaction. We adapted their tactical urbanism approach for embodied stress response.</div>
                 </div>
                 
                 <div class="method-card">
                     <div class="method-title">Community Health Worker Programs</div>
-                    <div class="method-desc">56% of cardiovascular intervention studies showed significant improvement. We use $95K living wages (Philadelphia family wage) for 4 neighborhood-based CHWs.</div>
+                    <div class="method-desc">56% of cardiovascular intervention studies showed significant improvement. We use $95K living wages (Philadelphia family wage) for 4 neighborhood-based CHWs responding to stress data.</div>
                 </div>
                 
                 <div class="method-card">
                     <div class="method-title">Medellín Urban Acupuncture</div>
-                    <div class="method-desc">Community-controlled interventions that "enable communities to rebuild identity while strengthening resilience and social cohesion." We adopted their governance model.</div>
+                    <div class="method-desc">Community-controlled interventions that "enable communities to rebuild identity while strengthening resilience and social cohesion." We adopted their participatory governance model.</div>
                 </div>
                 
                 <div class="method-card">
                     <div class="method-title">Philadelphia Administrative Data</div>
-                    <div class="method-desc">50K+ crime incidents, 25K+ 311 requests, school attendance data, health facility locations - we made existing data speak to embodied experience.</div>
+                    <div class="method-desc">50K+ crime incidents, 25K+ 311 requests, school attendance data, health facility locations - we made existing data speak to embodied experience without invasive monitoring.</div>
                 </div>
             </div>
 
             <div class="data-visualization">
                 <div class="viz-title">Philadelphia Embodied Stress Map (2025 Baseline)</div>
                 <div class="stress-map">
-                    <div class="neighborhood stress-medium">NW<br>7.2</div>
-                    <div class="neighborhood stress-high">NC<br>8.1</div>
-                    <div class="neighborhood stress-medium">NE<br>6.8</div>
-                    <div class="neighborhood stress-low">-</div>
-                    <div class="neighborhood stress-low">-</div>
+                    <div class="neighborhood stress-medium">D1<br>7.2</div>
+                    <div class="neighborhood stress-high">D2<br>8.1</div>
+                    <div class="neighborhood stress-medium">D3<br>6.8</div>
+                    <div class="neighborhood stress-low">D4<br>4.9</div>
+                    <div class="neighborhood stress-low">D5<br>4.2</div>
                     
-                    <div class="neighborhood stress-medium">CW<br>5.9</div>
-                    <div class="neighborhood stress-very-high">CC<br>8.4</div>
-                    <div class="neighborhood stress-medium">CE<br>6.2</div>
-                    <div class="neighborhood stress-low">-</div>
-                    <div class="neighborhood stress-low">-</div>
+                    <div class="neighborhood stress-medium">D6<br>5.9</div>
+                    <div class="neighborhood stress-very-high">D7<br>8.4</div>
+                    <div class="neighborhood stress-medium">D8<br>6.2</div>
+                    <div class="neighborhood stress-low">D9<br>3.8</div>
+                    <div class="neighborhood stress-low">D10<br>3.5</div>
                     
-                    <div class="neighborhood stress-medium">SW<br>6.5</div>
-                    <div class="neighborhood stress-medium">SC<br>6.1</div>
-                    <div class="neighborhood stress-medium">SE<br>5.8</div>
-                    <div class="neighborhood stress-low">-</div>
-                    <div class="neighborhood stress-low">-</div>
+                    <div class="neighborhood stress-medium">D11<br>6.5</div>
+                    <div class="neighborhood stress-medium">D12<br>6.1</div>
+                    <div class="neighborhood stress-medium">D13<br>5.8</div>
+                    <div class="neighborhood stress-low">D14<br>4.1</div>
+                    <div class="neighborhood stress-low">D15<br>3.9</div>
                 </div>
                 <div class="legend">
                     <div class="legend-item">
@@ -664,25 +677,25 @@
                     </div>
                     <div class="legend-item">
                         <div class="legend-color stress-low"></div>
-                        <span>Low (&lt;5)</span>
+                        <span>Low (<5)</span>
                     </div>
                 </div>
                 <p style="text-align: center; margin-top: 1rem; font-size: 0.9rem; color: var(--text-light);">
-                    CC = Central_Central (pilot district) | Stress index combines crime, environmental, child wellbeing, health access, and biometric proxies
+                    D7 = Pilot district (highest stress) | Stress index combines crime, environmental, child wellbeing, health access, and biometric proxies
                 </p>
             </div>
         </section>
 
         <section class="section fade-in" data-page="03">
-            <h2 class="section-title">⚙️ The Intervention Framework</h2>
+            <h2 class="section-title">The Intervention Framework</h2>
             <div class="archive-code">Implementation Model | Community Health Workers + Environmental Sensing + Tactical Urbanism</div>
             
             <div class="timeline">
                 <div class="timeline-item">
                     <div class="timeline-year">Phase 1: Sensing Infrastructure (2025-2026)</div>
                     <div class="timeline-content">
-                        <p><strong>Environmental sensors:</strong> Air quality, noise, foot traffic monitoring across Central_Central district</p>
-                        <p><strong>Community Health Workers:</strong> 4 neighborhood residents hired at $95K living wage, trained for 120+ hours</p>
+                        <p><strong>Environmental sensors:</strong> Air quality, noise, foot traffic monitoring across District 7</p>
+                        <p><strong>Community Health Workers:</strong> 4 neighborhood residents hired at $95K living wage, trained for 120+ hours in trauma-informed community care</p>
                         <p><strong>Data integration:</strong> Real-time correlation of environmental conditions with existing administrative data (crime, 311, school attendance)</p>
                     </div>
                 </div>
@@ -690,9 +703,9 @@
                 <div class="timeline-item">
                     <div class="timeline-year">Phase 2: Response Protocols (2026-2027)</div>
                     <div class="timeline-content">
-                        <p><strong>Immediate stress response:</strong> CHWs deployed within 2 hours when sensors detect stress spikes</p>
-                        <p><strong>Tactical urbanism:</strong> Quick environmental fixes (lighting, seating, green space) based on stress data</p>
-                        <p><strong>Community assemblies:</strong> Monthly meetings where residents review stress data and decide interventions</p>
+                        <p><strong>Immediate stress response:</strong> CHWs deployed within 2 hours when sensors detect stress spikes (air quality alerts, safety concerns, noise complaints)</p>
+                        <p><strong>Tactical urbanism:</strong> Quick environmental fixes (lighting, seating, green space) based on stress data patterns</p>
+                        <p><strong>Community assemblies:</strong> Monthly meetings where residents review embodied stress data and vote on interventions</p>
                     </div>
                 </div>
                 
@@ -700,23 +713,334 @@
                     <div class="timeline-year">Phase 3: Governance Transformation (2027-2028)</div>
                     <div class="timeline-content">
                         <p><strong>Policy integration:</strong> City budget decisions require embodied stress impact assessments</p>
-                        <p><strong>Community control:</strong> Residents vote on how their neighborhood's stress data is used</p>
-                        <p><strong>Scaling preparation:</strong> Document methodology for replication in other districts</p>
+                        <p><strong>Community control:</strong> District 7 residents vote on how their neighborhood's stress data is used and shared</p>
+                        <p><strong>Scaling preparation:</strong> Document methodology for replication in Districts
+         <section class="section fade-in" data-page="07">
+            <h2 class="section-title">The Governance Revolution in Practice</h2>
+            <div class="archive-code">Policy Transformation | Community Data Sovereignty | Care-Centered Decision Making</div>
+            
+            <div class="intro-text">
+                The real revolution wasn't the technology - it was how communities used embodied data to fundamentally reshape power. By 2030, District 7's community assemblies controlled a $2.3M annual budget allocation based entirely on stress reduction priorities identified through their own sensing network.
+            </div>
+            
+            <div class="queer-governance">
+                <div class="queer-governance-title">How Queer Governance Principles Transformed Urban Policy</div>
+                
+                <div style="margin-bottom: 1.5rem;">
+                    <p style="margin-bottom: 1rem; color: var(--text-dark);">Traditional city planning assumes all bodies experience space identically and optimizes for economic productivity over wellbeing. Queer governance recognizes that marginalized communities - LGBTQ+ people, people of color, disabled residents, working families - navigate urban space differently and often bear disproportionate stress from "neutral" policy decisions.</p>
+                    
+                    <p style="margin-bottom: 1rem; color: var(--text-dark);">Embodied sensing enabled governance that acknowledges these differences and centers care over efficiency. Instead of asking "How do we maximize tax revenue?" communities learned to ask "How do different bodies feel in this space, and how can we reduce harm?"</p>
+                </div>
+                
+                <div class="governance-principles">
+                    <div class="principle">
+                        <div class="principle-title">Community Data Sovereignty</div>
+                        <div class="principle-desc">Residents own their neighborhood's embodied data. No corporate or government surveillance - community assemblies decide how stress data gets used, stored, and shared.</div>
                     </div>
+                    <div class="principle">
+                        <div class="principle-title">Care-Centered Resource Allocation</div>
+                        <div class="principle-desc">City budget decisions based on stress reduction potential rather than economic development. Public resources flow toward healing and community care, not growth and productivity.</div>
+                    </div>
+                    <div class="principle">
+                        <div class="principle-title">Intersectional Impact Analysis</div>
+                        <div class="principle-desc">Policy decisions require assessment of differential impacts on different bodies. A new development might reduce stress for some while increasing displacement anxiety for others.</div>
+                    </div>
+                    <div class="principle">
+                        <div class="principle-title">Trauma-Informed Infrastructure</div>
+                        <div class="principle-desc">Urban design that acknowledges historical harm and actively works to create healing spaces for communities that have experienced systemic violence and neglect.</div>
+                    </div>
+                </div>
+                
+                <div style="background: rgba(255, 255, 255, 0.8); padding: 1.5rem; border-radius: 8px; margin-top: 1.5rem;">
+                    <h4 style="color: var(--deep-purple); margin-bottom: 1rem; font-family: 'Space Grotesk', sans-serif;">Real Example from District 7 (2035):</h4>
+                    <p style="color: var(--text-dark); font-style: italic; line-height: 1.6;">"When embodied stress data showed transgender residents experienced 40% higher anxiety near the main bus terminal, the community assembly voted to reallocate $180K from a planned parking expansion to fund improved lighting, gender-neutral bathrooms, and a community safety ambassador program. Traditional planning would have built the parking garage. Embodied governance chose care over cars."</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section fade-in" data-page="08">
+            <h2 class="section-title">Implementation Readiness Assessment</h2>
+            <div class="archive-code">Organizational Capacity | Partnership Framework | Pilot Requirements</div>
+            
+            <div class="intro-text">
+                This methodology is designed for immediate implementation by organizations already working in community health, urban planning, or social justice. The analysis demonstrates feasibility using existing administrative data infrastructure and documented intervention models.
+            </div>
+            
+            <div class="methodology-grid">
+                <div class="method-card">
+                    <div class="method-title">Community Development Corporations</div>
+                    <div class="method-desc">CDCs and NeighborWorks affiliates already employ community health workers and have neighborhood relationships. Adding embodied sensing creates data-driven targeting for existing programs while building community governance capacity.</div>
+                </div>
+                
+                <div class="method-card">
+                    <div class="method-title">Public Health Departments</div>
+                    <div class="method-desc">Municipal health agencies have administrative data access and community partnerships. Embodied sensing adds predictive intervention capability and upstream prevention focus to existing health equity initiatives.</div>
+                </div>
+                
+                <div class="method-card">
+                    <div class="method-title">Urban Planning Agencies</div>
+                    <div class="method-desc">Planning departments need better community impact metrics for equity-centered development. Embodied stress data provides evidence base for policy decisions that center resident wellbeing over economic development.</div>
+                </div>
+                
+                <div class="method-card">
+                    <div class="method-title">Healthcare Systems & Insurers</div>
+                    <div class="method-desc">Hospitals and insurance companies increasingly invest in preventive community health. ROI model demonstrates cost-effectiveness of upstream neighborhood stress reduction interventions.</div>
                 </div>
             </div>
             
             <div class="data-insight">
-                <div class="data-insight-title">What Actually Happened</div>
-                <p><span class="highlight">Air quality alerts triggered 23 immediate responses</span> - from rerouting buses to emergency community meals when pollution spiked near the elementary school. <span class="highlight">CHW wellness checks reached 340 residents</span> in the first year alone. <span class="highlight">Community assemblies averaged 85 attendees</span> - unusually high for neighborhood meetings because people could see their own stress data reflected back.</p>
+                <div class="data-insight-title">Technical Implementation Requirements</div>
+                <p><strong>Existing capacity:</strong> Cities already collect required administrative data through normal operations. <strong>Technology needs:</strong> Basic environmental sensors ($150K), data integration platform ($100K), community engagement app ($75K). <strong>Personnel:</strong> 4 full-time community health workers at living wage ($380K/year). <strong>Community infrastructure:</strong> Monthly assemblies, participatory governance training, community data literacy programs.</p>
+            </div>
+            
+            <div style="background: linear-gradient(135deg, rgba(140, 97, 255, 0.1), rgba(68, 194, 253, 0.1)); padding: 2rem; border-radius: 12px; margin: 2rem 0; border: 2px solid var(--accent-purple);">
+                <h3 style="color: var(--deep-purple); margin-bottom: 1rem; font-family: 'Space Grotesk', sans-serif;">Pilot Readiness Checklist</h3>
+                <ul style="list-style: none; color: var(--text-dark);">
+                    <li style="margin-bottom: 0.8rem;">✓ Administrative data access (crime, 311, school attendance, health facilities)</li>
+                    <li style="margin-bottom: 0.8rem;">✓ Community health worker hiring and training capacity</li>
+                    <li style="margin-bottom: 0.8rem;">✓ Neighborhood with baseline stress indicators and willing residents</li>
+                    <li style="margin-bottom: 0.8rem;">✓ Municipal partnership for policy integration</li>
+                    <li style="margin-bottom: 0.8rem;">✓ $1.4M funding commitment over 3 years</li>
+                    <li style="margin-bottom: 0.8rem;">✓ Community governance facilitation expertise</li>
+                </ul>
             </div>
         </section>
 
-        <section class="section fade-in" data-page="04">
-            <h2 class="section-title">📈 Conservative Impact Assessment</h2>
-            <div class="archive-code">Financial Analysis | Evidence-Based Projections | 25-Year ROI Model</div>
+        <div class="cta-section">
+            <h3 class="cta-title">From Speculation to Implementation</h3>
+            <p class="cta-subtitle">Conservative projections • Evidence-based methodology • Transformative governance potential</p>
             
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin: 2rem 0;">
-                <div style="background: rgba(255, 182, 193, 0.2); padding: 1.5rem; border-radius: 12px; border: 2px solid #ff6b7a;">
-                    <h3 style="color: #d32f2f; margin-bottom: 1rem; font-family: 'Space Grotesk', sans-serif;">2025 Baseline</h3>
-                    <ul style="list-style: none; color: var(--text-dark);">
+            <div style="background: rgba(255, 255, 255, 0.15); padding: 2rem; border-radius: 15px; margin: 2rem 0; position: relative; z-index: 1;">
+                <p style="font-size: 1.2rem; margin-bottom: 1.5rem; font-weight: 500;">This analysis demonstrates implementation feasibility for organizations working in:</p>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.5rem; margin-top: 1.5rem;">
+                    <div style="text-align: center; padding: 1.2rem; background: rgba(255, 255, 255, 0.15); border-radius: 12px; border: 2px solid rgba(255,255,255,0.3);">
+                        <div style="font-size: 1rem; font-weight: 600; margin-bottom: 0.5rem;">Community Health</div>
+                        <div style="font-size: 0.85rem; opacity: 0.9;">NeighborWorks, CDCs, health equity organizations</div>
+                    </div>
+                    <div style="text-align: center; padding: 1.2rem; background: rgba(255, 255, 255, 0.15); border-radius: 12px; border: 2px solid rgba(255,255,255,0.3);">
+                        <div style="font-size: 1rem; font-weight: 600; margin-bottom: 0.5rem;">Urban Planning</div>
+                        <div style="font-size: 0.85rem; opacity: 0.9;">Municipal agencies, community development</div>
+                    </div>
+                    <div style="text-align: center; padding: 1.2rem; background: rgba(255, 255, 255, 0.15); border-radius: 12px; border: 2px solid rgba(255,255,255,0.3);">
+                        <div style="font-size: 1rem; font-weight: 600; margin-bottom: 0.5rem;">Social Justice</div>
+                        <div style="font-size: 0.85rem; opacity: 0.9;">Foundations, advocacy organizations, policy institutes</div>
+                    </div>
+                    <div style="text-align: center; padding: 1.2rem; background: rgba(255, 255, 255, 0.15); border-radius: 12px; border: 2px solid rgba(255,255,255,0.3);">
+                        <div style="font-size: 1rem; font-weight: 600; margin-bottom: 0.5rem;">Municipal Innovation</div>
+                        <div style="font-size: 0.85rem; opacity: 0.9;">Smart cities initiatives, civic technology labs</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="margin-top: 2.5rem; position: relative; z-index: 1;">
+                <p style="font-size: 1.1rem; opacity: 0.95; margin-bottom: 1rem; font-weight: 500;">Ready to discuss pilot implementation?</p>
+                <p style="font-size: 1rem; opacity: 0.9; margin-bottom: 1.5rem;">This methodology bridges speculative vision with actionable policy intervention using conservative, evidence-based projections.</p>
+                <div style="background: rgba(255, 255, 255, 0.1); padding: 1rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.2);">
+                    <p style="font-size: 0.9rem; opacity: 0.9;">Complete analysis, R code, and methodology documentation:</p>
+                    <p style="font-family: 'JetBrains Mono', monospace; font-size: 0.9rem; margin-top: 0.5rem; color: rgba(255,255,255,0.95);">github.com/mixonstudio/embodied-cities-philadelphia</p>
+                </div>
+            </div>
+        </div>
+
+        <footer style="text-align: center; padding: 3rem 2rem; background: rgba(255, 255, 255, 0.05); margin-top: 3rem;">
+            <p style="font-size: 1rem; color: rgba(42, 42, 42, 0.8); margin-bottom: 0.5rem; font-weight: 500;">Created by S • Design × Data × Democracy</p>
+            <p style="font-size: 0.85rem; color: rgba(42, 42, 42, 0.7); margin-bottom: 1rem;">"A Queer Civic Future" • Special Data Issue • 2025</p>
+            <p style="font-size: 0.9rem; font-style: italic; color: rgba(42, 42, 42, 0.6); max-width: 400px; margin: 0 auto; line-height: 1.5;">Making urban inequity impossible to ignore through embodied justice</p>
+        </footer>
+    </div>
+
+    <script>
+        // Enhanced interactivity for professional presentation
+        document.addEventListener('DOMContentLoaded', function() {
+            // Smooth section reveal animation
+            const sections = document.querySelectorAll('.section');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, { 
+                threshold: 0.1,
+                rootMargin: '50px 0px -50px 0px'
+            });
+            
+            sections.forEach(section => {
+                section.style.opacity = '0';
+                section.style.transform = 'translateY(30px)';
+                section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                observer.observe(section);
+            });
+            
+            // Interactive stress map with enhanced tooltips
+            const neighborhoods = document.querySelectorAll('.neighborhood');
+            neighborhoods.forEach(neighborhood => {
+                neighborhood.addEventListener('mouseenter', function() {
+                    this.style.transform = 'scale(1.15)';
+                    this.style.zIndex = '10';
+                    this.style.boxShadow = '0 6px 20px rgba(52, 48, 144, 0.4)';
+                    this.style.transition = 'all 0.3s ease';
+                    
+                    // Enhanced tooltip with stress level context
+                    const tooltip = document.createElement('div');
+                    tooltip.className = 'district-tooltip';
+                    tooltip.style.cssText = `
+                        position: absolute;
+                        background: var(--deep-purple);
+                        color: white;
+                        padding: 0.6rem 1rem;
+                        border-radius: 8px;
+                        font-size: 0.8rem;
+                        z-index: 100;
+                        transform: translate(-50%, -130%);
+                        left: 50%;
+                        top: 0;
+                        white-space: nowrap;
+                        box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+                        pointer-events: none;
+                        font-family: 'JetBrains Mono', monospace;
+                        border: 2px solid rgba(255,255,255,0.2);
+                    `;
+                    const districtNum = this.textContent.split('\n')[0];
+                    const stressScore = this.textContent.split('\n')[1];
+                    const stressLevel = parseFloat(stressScore);
+                    let stressDescription = '';
+                    if (stressLevel >= 8) stressDescription = 'Severe stress - priority intervention';
+                    else if (stressLevel >= 7) stressDescription = 'High stress - needs attention';
+                    else if (stressLevel >= 5) stressDescription = 'Moderate stress - monitor trends';
+                    else stressDescription = 'Low stress - maintain conditions';
+                    
+                    tooltip.innerHTML = `<strong>District ${districtNum}</strong><br>Stress: ${stressScore}/10<br><em>${stressDescription}</em>`;
+                    this.style.position = 'relative';
+                    this.appendChild(tooltip);
+                });
+                
+                neighborhood.addEventListener('mouseleave', function() {
+                    this.style.transform = 'scale(1)';
+                    this.style.zIndex = '1';
+                    this.style.boxShadow = 'none';
+                    
+                    const tooltip = this.querySelector('.district-tooltip');
+                    if (tooltip) tooltip.remove();
+                });
+            });
+            
+            // Timeline item enhanced interaction
+            const timelineItems = document.querySelectorAll('.timeline-item');
+            timelineItems.forEach((item, index) => {
+                // Staggered animation
+                item.style.animationDelay = `${index * 0.2}s`;
+                
+                item.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateX(20px)';
+                    this.style.borderColor = 'var(--bright-purple)';
+                    this.style.background = 'rgba(255, 255, 255, 0.85)';
+                    this.style.boxShadow = '0 8px 25px rgba(52, 48, 144, 0.15)';
+                });
+                
+                item.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateX(0)';
+                    this.style.borderColor = 'var(--medium-blue)';
+                    this.style.background = 'rgba(255, 255, 255, 0.6)';
+                    this.style.boxShadow = 'none';
+                });
+            });
+            
+            // Professional portfolio interaction tracking
+            const methodCards = document.querySelectorAll('.method-card');
+            methodCards.forEach(card => {
+                card.addEventListener('click', function() {
+                    console.log('Methodology section engaged:', this.querySelector('.method-title').textContent);
+                    
+                    // Professional visual feedback
+                    this.style.borderColor = 'var(--accent-purple)';
+                    this.style.background = 'rgba(140, 97, 255, 0.1)';
+                    this.style.transform = 'translateY(-5px)';
+                    
+                    setTimeout(() => {
+                        this.style.borderColor = 'var(--medium-blue)';
+                        this.style.background = 'rgba(255, 255, 255, 0.6)';
+                        this.style.transform = 'translateY(-3px)';
+                    }, 1500);
+                });
+            });
+            
+            // Smooth scrolling with enhanced header effects
+            let ticking = false;
+            window.addEventListener('scroll', function() {
+                if (!ticking) {
+                    requestAnimationFrame(function() {
+                        const scrolled = window.pageYOffset;
+                        const header = document.querySelector('.header');
+                        const scrollProgress = Math.min(scrolled / 200, 1);
+                        
+                        header.style.transform = `translateY(${-scrollProgress * 8}px) scale(${1 - scrollProgress * 0.02})`;
+                        header.style.boxShadow = `0 ${6 + scrollProgress * 10}px ${30 + scrollProgress * 20}px rgba(52, 48, 144, ${0.15 + scrollProgress * 0.1})`;
+                        header.style.transition = 'all 0.3s ease';
+                        
+                        ticking = false;
+                    });
+                    ticking = true;
+                }
+            });
+            
+            // Staggered animation for stats cards with counter effect
+            const statCards = document.querySelectorAll('.stat-card');
+            statCards.forEach((card, index) => {
+                card.style.animationDelay = `${index * 0.15}s`;
+                card.classList.add('fade-in');
+                
+                // Number counter animation
+                const statNumber = card.querySelector('.stat-number');
+                if (statNumber) {
+                    const finalText = statNumber.textContent;
+                    const hasNumber = /[\d.]/.test(finalText);
+                    
+                    if (hasNumber) {
+                        statNumber.textContent = '0';
+                        setTimeout(() => {
+                            let current = 0;
+                            const target = parseFloat(finalText.replace(/[^\d.]/g, ''));
+                            const increment = target / 30;
+                            
+                            const counter = setInterval(() => {
+                                current += increment;
+                                if (current >= target) {
+                                    statNumber.textContent = finalText;
+                                    clearInterval(counter);
+                                } else {
+                                    const prefix = finalText.match(/[^\d.]+/)?.[0] || '';
+                                    const suffix = finalText.match(/[^\d.]+$/)?.[0] || '';
+                                    statNumber.textContent = prefix + Math.floor(current) + suffix;
+                                }
+                            }, 50);
+                        }, index * 200);
+                    }
+                }
+            });
+            
+            // ROI highlight enhanced interaction
+            const roiHighlight = document.querySelector('.roi-highlight');
+            if (roiHighlight) {
+                roiHighlight.addEventListener('mouseenter', function() {
+                    this.style.transform = 'scale(1.02) translateY(-3px)';
+                    this.style.boxShadow = '0 12px 40px rgba(52, 48, 144, 0.3)';
+                });
+                
+                roiHighlight.addEventListener('mouseleave', function() {
+                    this.style.transform = 'scale(1) translateY(0)';
+                    this.style.boxShadow = 'none';
+                });
+            }
+            
+            // Professional interaction logging
+            document.addEventListener('click', function(e) {
+                if (e.target.closest('.method-card') || e.target.closest('.timeline-item') || e.target.closest('.stat-card')) {
+                    console.log('Professional portfolio engagement detected');
+                }
+            });
+        });
+    </script>
+</body>
+</html>                   
