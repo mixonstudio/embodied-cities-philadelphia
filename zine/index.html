@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embodied Cities: A Queer Civic Future Special Issue</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600&family=Space+Grotesk:wght@300;400;500;600&family=JetBrains+Mono:wght@300;400&display=swap');
+        
+        :root {
+            --deep-purple: #343090;
+            --bright-purple: #5f59f7;
+            --medium-blue: #6592fd;
+            --bright-cyan: #44c2fd;
+            --accent-purple: #8c61ff;
+            --text-dark: #2a2a2a;
+            --text-light: #666;
+            --bg-gradient: linear-gradient(135deg, var(--bright-cyan) 0%, var(--medium-blue) 50%, var(--bright-purple) 100%);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Rajdhani', sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background: var(--bg-gradient);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding: 2.5rem;
+            background: rgba(255, 255, 255, 0.95);
+            border-left: 4px solid var(--deep-purple);
+            box-shadow: 0 6px 30px rgba(52, 48, 144, 0.15);
+            backdrop-filter: blur(15px);
+            position: relative;
+            border-radius: 0 15px 15px 0;
+        }
+        
+        .header::after {
+            content: "SPECIAL DATA ISSUE";
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: linear-gradient(45deg, var(--deep-purple), var(--bright-purple));
+            color: white;
+            padding: 0.4rem 1rem;
+            border-radius: 25px;
+            font-size: 0.75rem;
+            font-weight: 500;
+            font-family: 'JetBrains Mono', monospace;
+            letter-spacing: 0.5px;
+        }
+        
+        .title {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 2.8rem;
+            font-weight: 600;
+            background: linear-gradient(135deg, var(--deep-purple), var(--bright-purple));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 0.5rem;
+            line-height: 1.2;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            color: var(--bright-purple);
+            font-style: italic;
+            margin-bottom: 1rem;
+        }
+        
+        .tagline {
+            font-size: 1rem;
+            color: var(--text-light);
+            max-width: 600px;
+            margin: 0 auto;
+            font-weight: 500;
+        }
+        
+        .section {
+            background: rgba(255, 255, 255, 0.95);
+            margin-bottom: 2.5rem;
+            padding: 2.5rem;
+            border: none;
+            border-left: 4px solid var(--deep-purple);
+            box-shadow: 0 6px 30px rgba(52, 48, 144, 0.1);
+            position: relative;
+            backdrop-filter: blur(15px);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-radius: 0 15px 15px 0;
+        }
+        
+        .section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 40px rgba(52, 48, 144, 0.2);
+        }
+        
+        .section::after {
+            content: attr(data-page);
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: linear-gradient(45deg, var(--bright-purple), var(--accent-purple));
+            color: white;
+            padding: 0.4rem 1rem;
+            border-radius: 25px;
+            font-size: 0.75rem;
+            font-weight: 500;
+            font-family: 'JetBrains Mono', monospace;
+        }
+        
+        .section-title {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.9rem;
+            color: var(--deep-purple);
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+        }
+        
+        .archive-code {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.8rem;
+            color: var(--bright-purple);
+            background: rgba(95, 89, 247, 0.1);
+            padding: 0.4rem 0.8rem;
+            border-radius: 6px;
+            margin-bottom: 1rem;
+            display: inline-block;
+            border: 1px solid rgba(95, 89, 247, 0.2);
+        }
+        
+        .intro-text {
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: var(--text-dark);
+            font-style: italic;
+            margin-bottom: 1.5rem;
+            padding: 1.5rem;
+            background: linear-gradient(135deg, rgba(68, 194, 253, 0.1), rgba(140, 97, 255, 0.1));
+            border-left: 4px solid var(--bright-cyan);
+            border-radius: 0 12px 12px 0;
+        }
+        
+        .data-insight {
+            background: linear-gradient(135deg, rgba(52, 48, 144, 0.05), rgba(95, 89, 247, 0.05));
+            padding: 1.5rem;
+            border-radius: 12px;
+            margin: 2rem 0;
+            border: 2px solid rgba(95, 89, 247, 0.2);
+        }
+        
+        .data-insight-title {
+            font-family: 'Space Grotesk', sans-serif;
+            color: var(--deep-purple);
+            font-weight: 600;
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+        
+        .philadelphia-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 1.2rem;
+            margin: 2rem 0;
+        }
+        
+        .stat-card {
+            background: linear-gradient(135deg, rgba(68, 194, 253, 0.1), rgba(140, 97, 255, 0.1));
+            padding: 1.5rem;
+            border-radius: 12px;
+            text-align: center;
+            border: 2px solid rgba(68, 194, 253, 0.3);
+            transition: transform 0.3s ease;
+        }
+        
+        .stat-card:hover {
+            transform: translateY(-3px);
+        }
+        
+        .stat-number {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 2.2rem;
+            font-weight: 600;
+            color: var(--deep-purple);
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        
+        .stat-label {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            line-height: 1.3;
+        }
+        
+        .methodology-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        
+        .method-card {
+            background: rgba(255, 255, 255, 0.6);
+            padding: 1.5rem;
+            border-radius: 12px;
+            border: 2px solid var(--medium-blue);
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+        
+        .method-card:hover {
+            transform: translateY(-3px);
+            border-color: var(--bright-purple);
+        }
+        
+        .method-title {
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 600;
+            color: var(--deep-purple);
+            margin-bottom: 0.8rem;
+            font-size: 1.1rem;
+        }
+        
+        .method-desc {
+            font-size: 0.95rem;
+            color: var(--text-light);
+            line-height: 1.5;
+        }
+        
+        .timeline {
+            position: relative;
+            padding-left: 2.5rem;
+        }
+        
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            background: linear-gradient(to bottom, var(--deep-purple), var(--bright-cyan));
+        }
+        
+        .timeline-item {
+            position: relative;
+            margin-bottom: 2.5rem;
+            padding: 1.5rem;
+            background: rgba(255, 255, 255, 0.6);
+            border-radius: 12px;
+            border: 2px solid var(--medium-blue);
+            transition: transform 0.3s ease;
+        }
+        
+        .timeline-item:hover {
+            transform: translateX(10px);
+            border-color: var(--bright-purple);
+        }
+        
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -3rem;
+            top: 1.5rem;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: var(--deep-purple);
+            border: 3px solid white;
+            box-shadow: 0 2px 8px rgba(52, 48, 144, 0.3);
+        }
+        
+        .timeline-year {
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 600;
+            color: var(--deep-purple);
+            font-size: 1.2rem;
+            margin-bottom: 0.8rem;
+        }
+        
+        .roi-highlight {
+            background: linear-gradient(135deg, var(--deep-purple), var(--bright-purple));
+            color: white;
+            padding: 2.5rem;
+            border-radius: 15px;
+            margin: 2rem 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .roi-highlight::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg, transparent, rgba(255,255,255,0.1), transparent);
+            transform: rotate(45deg);
+            animation: shimmer 3s infinite;
+        }
+        
+        @keyframes shimmer {
+            0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
+            100% { transform: translateX(100%) translateY(100%) rotate(45deg); }
+        }
+        
+        .roi-number {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 3.5rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .roi-desc {
+            font-size: 1.2rem;
+            opacity: 0.95;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .queer-governance {
+            background: linear-gradient(135deg, rgba(140, 97, 255, 0.1), rgba(68, 194, 253, 0.1));
+            border: 2px solid var(--accent-purple);
+            border-radius: 15px;
+            padding: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .queer-governance-title {
+            font-family: 'Space Grotesk', sans-serif;
+            color: var(--deep-purple);
+            font-weight: 600;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+        
+        .governance-principles {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .principle {
+            padding: 1rem;
+            background: rgba(255, 255, 255, 0.7);
+            border-radius: 8px;
+            border-left: 3px solid var(--accent-purple);
+        }
+        
+        .principle-title {
+            font-weight: 600;
+            color: var(--deep-purple);
+            font-size: 0.95rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .principle-desc {
+            font-size: 0.85rem;
+            color: var(--text-light);
+            line-height: 1.4;
+        }
+        
+        .cta-section {
+            text-align: center;
+            padding: 3rem;
+            background: linear-gradient(135deg, var(--deep-purple) 0%, var(--bright-purple) 100%);
+            border-radius: 20px;
+            color: white;
+            margin-top: 3rem;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .cta-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="2" fill="white" opacity="0.1"/></svg>') repeat;
+            animation: float 20s infinite linear;
+        }
+        
+        @keyframes float {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-100px); }
+        }
+        
+        .cta-title {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .cta-subtitle {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .highlight {
+            background: linear-gradient(135deg, rgba(68, 194, 253, 0.2), rgba(140, 97, 255, 0.2));
+            padding: 0.3rem 0.6rem;
+            border-radius: 6px;
+            font-weight: 500;
+            color: var(--deep-purple);
+        }
+        
+        .data-visualization {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 2rem;
+            border-radius: 12px;
+            margin: 2rem 0;
+            border: 2px solid var(--medium-blue);
+        }
+        
+        .viz-title {
+            font-family: 'Space Grotesk', sans-serif;
+            color: var(--deep-purple);
+            font-weight: 600;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+        
+        .stress-map {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 0.5rem;
+            margin: 1rem 0;
+            max-width: 400px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .neighborhood {
+            aspect-ratio: 1;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.7rem;
+            font-weight: 600;
+            color: white;
+            text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+        }
+        
+        .stress-very-high { background: var(--deep-purple); }
+        .stress-high { background: var(--bright-purple); }
+        .stress-medium { background: var(--medium-blue); }
+        .stress-low { background: var(--bright-cyan); }
+        
+        .legend {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 1rem;
+            font-size: 0.8rem;
+        }
+        
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .legend-color {
+            width: 12px;
+            height: 12px;
+            border-radius: 3px;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+            
+            .title {
+                font-size: 2.2rem;
+            }
+            
+            .section {
+                padding: 1.5rem;
+            }
+            
+            .timeline {
+                padding-left: 2rem;
+            }
+            
+            .stress-map {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+        
+        .fade-in {
+            animation: fadeIn 0.8s ease-in;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header fade-in">
+            <h1 class="title">Embodied Cities</h1>
+            <p class="subtitle">A Queer Civic Future Special Issue</p>
+            <p class="tagline">Philadelphia, 2050 | Looking Back: How We Learned to Measure Justice in Bodies, Not Spreadsheets</p>
+        </header>
+
+        <section class="section fade-in" data-page="01">
+            <h2 class="section-title">🔍 The Problem We Actually Solved</h2>
+            <div class="archive-code">Philadelphia Case Study | 2025-2050 | Methodological Innovation</div>
+            
+            <div class="intro-text">
+                In 2025, Philadelphia could track 50,000 crime incidents annually but couldn't explain why Central_Central district residents felt unsafe in broad daylight. The city monitored 25,000 311 service requests but missed the daily stress of living near constant construction noise. School administrators saw 36.6% chronic absenteeism rates but didn't connect this to neighborhood-level trauma.
+            </div>
+            
+            <div class="data-insight">
+                <div class="data-insight-title">The Data Revolution</div>
+                <p>We developed a 5-component <span class="highlight">embodied stress index</span> using administrative data Philadelphia already collected: crime incidents, 311 complaints, school absenteeism, health facility access, and environmental conditions. No invasive monitoring required - just connecting existing data to lived experience.</p>
+            </div>
+            
+            <div class="philadelphia-stats">
+                <div class="stat-card">
+                    <span class="stat-number">8.4/10</span>
+                    <div class="stat-label">Baseline embodied stress in Central_Central district (2025)</div>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">$1.4M</span>
+                    <div class="stat-label">3-year pilot investment (includes $95K living wages for 4 CHWs)</div>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">15%</span>
+                    <div class="stat-label">Conservative stress reduction by 2028 (evidence-based)</div>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">1,200</span>
+                    <div class="stat-label">Residents in pilot district</div>
+                </div>
+            </div>
+
+            <div class="queer-governance">
+                <div class="queer-governance-title">Queer Governance Innovation</div>
+                <p style="margin-bottom: 1rem; color: var(--text-dark);">This wasn't just about better data - it was about fundamentally shifting power. Instead of optimizing cities for productivity, we centered how spaces make different bodies feel.</p>
+                
+                <div class="governance-principles">
+                    <div class="principle">
+                        <div class="principle-title">Community Data Sovereignty</div>
+                        <div class="principle-desc">Residents own and control their neighborhood's embodied data</div>
+                    </div>
+                    <div class="principle">
+                        <div class="principle-title">Care-Centered Budgeting</div>
+                        <div class="principle-desc">City resources allocated based on stress reduction potential</div>
+                    </div>
+                    <div class="principle">
+                        <div class="principle-title">Intersectional Analysis</div>
+                        <div class="principle-desc">Different bodies experience the same spaces differently</div>
+                    </div>
+                    <div class="principle">
+                        <div class="principle-title">Healing Justice</div>
+                        <div class="principle-desc">Addressing neighborhood trauma through environmental design</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section fade-in" data-page="02">
+            <h2 class="section-title">📊 Methodology: Building on Proven Models</h2>
+            <div class="archive-code">Evidence Base | Barcelona Superblocks + Community Health Workers + Medellín Urban Acupuncture</div>
+            
+            <div class="intro-text">
+                We didn't invent community health interventions. We synthesized three documented successful models and added real-time embodied sensing to create something unprecedented: governance that responds to how policies make bodies feel.
+            </div>
+            
+            <div class="methodology-grid">
+                <div class="method-card">
+                    <div class="method-title">Barcelona Superblocks Model</div>
+                    <div class="method-desc">Environmental interventions achieved 25% air pollution reduction, improved resident well-being, sleep quality, and social interaction. We adapted their tactical urbanism approach.</div>
+                </div>
+                
+                <div class="method-card">
+                    <div class="method-title">Community Health Worker Programs</div>
+                    <div class="method-desc">56% of cardiovascular intervention studies showed significant improvement. We use $95K living wages (Philadelphia family wage) for 4 neighborhood-based CHWs.</div>
+                </div>
+                
+                <div class="method-card">
+                    <div class="method-title">Medellín Urban Acupuncture</div>
+                    <div class="method-desc">Community-controlled interventions that "enable communities to rebuild identity while strengthening resilience and social cohesion." We adopted their governance model.</div>
+                </div>
+                
+                <div class="method-card">
+                    <div class="method-title">Philadelphia Administrative Data</div>
+                    <div class="method-desc">50K+ crime incidents, 25K+ 311 requests, school attendance data, health facility locations - we made existing data speak to embodied experience.</div>
+                </div>
+            </div>
+
+            <div class="data-visualization">
+                <div class="viz-title">Philadelphia Embodied Stress Map (2025 Baseline)</div>
+                <div class="stress-map">
+                    <div class="neighborhood stress-medium">NW<br>7.2</div>
+                    <div class="neighborhood stress-high">NC<br>8.1</div>
+                    <div class="neighborhood stress-medium">NE<br>6.8</div>
+                    <div class="neighborhood stress-low">-</div>
+                    <div class="neighborhood stress-low">-</div>
+                    
+                    <div class="neighborhood stress-medium">CW<br>5.9</div>
+                    <div class="neighborhood stress-very-high">CC<br>8.4</div>
+                    <div class="neighborhood stress-medium">CE<br>6.2</div>
+                    <div class="neighborhood stress-low">-</div>
+                    <div class="neighborhood stress-low">-</div>
+                    
+                    <div class="neighborhood stress-medium">SW<br>6.5</div>
+                    <div class="neighborhood stress-medium">SC<br>6.1</div>
+                    <div class="neighborhood stress-medium">SE<br>5.8</div>
+                    <div class="neighborhood stress-low">-</div>
+                    <div class="neighborhood stress-low">-</div>
+                </div>
+                <div class="legend">
+                    <div class="legend-item">
+                        <div class="legend-color stress-very-high"></div>
+                        <span>Very High (8+)</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color stress-high"></div>
+                        <span>High (7-8)</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color stress-medium"></div>
+                        <span>Medium (5-7)</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color stress-low"></div>
+                        <span>Low (&lt;5)</span>
+                    </div>
+                </div>
+                <p style="text-align: center; margin-top: 1rem; font-size: 0.9rem; color: var(--text-light);">
+                    CC = Central_Central (pilot district) | Stress index combines crime, environmental, child wellbeing, health access, and biometric proxies
+                </p>
+            </div>
+        </section>
+
+        <section class="section fade-in" data-page="03">
+            <h2 class="section-title">⚙️ The Intervention Framework</h2>
+            <div class="archive-code">Implementation Model | Community Health Workers + Environmental Sensing + Tactical Urbanism</div>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-year">Phase 1: Sensing Infrastructure (2025-2026)</div>
+                    <div class="timeline-content">
+                        <p><strong>Environmental sensors:</strong> Air quality, noise, foot traffic monitoring across Central_Central district</p>
+                        <p><strong>Community Health Workers:</strong> 4 neighborhood residents hired at $95K living wage, trained for 120+ hours</p>
+                        <p><strong>Data integration:</strong> Real-time correlation of environmental conditions with existing administrative data (crime, 311, school attendance)</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-year">Phase 2: Response Protocols (2026-2027)</div>
+                    <div class="timeline-content">
+                        <p><strong>Immediate stress response:</strong> CHWs deployed within 2 hours when sensors detect stress spikes</p>
+                        <p><strong>Tactical urbanism:</strong> Quick environmental fixes (lighting, seating, green space) based on stress data</p>
+                        <p><strong>Community assemblies:</strong> Monthly meetings where residents review stress data and decide interventions</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-year">Phase 3: Governance Transformation (2027-2028)</div>
+                    <div class="timeline-content">
+                        <p><strong>Policy integration:</strong> City budget decisions require embodied stress impact assessments</p>
+                        <p><strong>Community control:</strong> Residents vote on how their neighborhood's stress data is used</p>
+                        <p><strong>Scaling preparation:</strong> Document methodology for replication in other districts</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="data-insight">
+                <div class="data-insight-title">What Actually Happened</div>
+                <p><span class="highlight">Air quality alerts triggered 23 immediate responses</span> - from rerouting buses to emergency community meals when pollution spiked near the elementary school. <span class="highlight">CHW wellness checks reached 340 residents</span> in the first year alone. <span class="highlight">Community assemblies averaged 85 attendees</span> - unusually high for neighborhood meetings because people could see their own stress data reflected back.</p>
+            </div>
+        </section>
+
+        <section class="section fade-in" data-page="04">
+            <h2 class="section-title">📈 Conservative Impact Assessment</h2>
+            <div class="archive-code">Financial Analysis | Evidence-Based Projections | 25-Year ROI Model</div>
+            
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin: 2rem 0;">
+                <div style="background: rgba(255, 182, 193, 0.2); padding: 1.5rem; border-radius: 12px; border: 2px solid #ff6b7a;">
+                    <h3 style="color: #d32f2f; margin-bottom: 1rem; font-family: 'Space Grotesk', sans-serif;">2025 Baseline</h3>
+                    <ul style="list-style: none; color: var(--text-dark);">
