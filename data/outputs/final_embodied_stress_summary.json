@@ -1,0 +1,22 @@
+{
+  "neighborhoods_analyzed": [11],
+  "stress_distribution": [
+    {
+      "Var1": "High Embodied Stress",
+      "Freq": 4
+    },
+    {
+      "Var1": "Moderate Embodied Stress",
+      "Freq": 1
+    },
+    {
+      "Var1": "Severe Embodied Stress",
+      "Freq": 6
+    }
+  ],
+  "highest_stress_neighborhood": ["North_East"],
+  "highest_stress_score": [9.2],
+  "lowest_stress_neighborhood": ["Central_West"],
+  "lowest_stress_score": [3.01],
+  "methodology_validation": [-0.3336]
+}

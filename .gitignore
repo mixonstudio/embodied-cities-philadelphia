@@ -4,21 +4,43 @@
 .Rproj.user/
 *.Rproj
 
-# Data (exclude raw data files that are large)
+# Large data files (exclude from repo but keep structure)
 data/raw/*.csv
-data/raw/*.xlsx
-data/raw/*.shp
+data/raw/*.xlsx  
+data/raw/*.json
+data/processed/*.csv
 *.rds
 
-# Output files
-*.png
-*.pdf
-*.html
+# Generated outputs (exclude from repo)
+output/figures/*.png
+output/figures/*.svg
+output/figures/*.pdf
+output/maps/*.html
+output/maps/*.png
+
+# Zine work-in-progress
+zine/drafts/
+zine/temp/
+
+# Documentation drafts
+docs/funding/drafts/
+docs/methodology/temp/
 
 # System files
 .DS_Store
 Thumbs.db
+*.tmp
 
-# Environment
+# Environment and secrets
 .Renviron
+.env
+config/secrets.yml
+
+# Package management
+renv/library/
+renv/staging/
+
+# IDE
+.vscode/
+.idea/
 

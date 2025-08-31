@@ -1,0 +1,6 @@
+component,proxy_used,data_source,weight,rationale
+Acute Stress Events,High trauma crimes + interpersonal violence,Philadelphia Police Department,25%,Violent crime creates lasting physiological stress responses
+Environmental Stressors,311 visual blight + auditory stress + mobility barriers,Philadelphia 311 System,20%,Environmental disorder correlates with cortisol levels and chronic stress
+Child Wellbeing,School chronic absenteeism rates,School District of Philadelphia,15%,Child stress reflects broader community stress; absenteeism indicates family/neighborhood distress
+Health Access Stress,Mental health facilities + pharmacy access + food deserts,Multiple Philadelphia sources,20%,Poor health access creates chronic stress and reduces resilience
+Biometric Proxies,Composite of acute stress events + chronic health burden + isolation,Calculated proxies,20%,Multi-factor proxy for actual biometric stress measurements

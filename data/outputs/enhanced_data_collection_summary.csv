@@ -1,0 +1,9 @@
+dataset,records,description,collection_date
+crime_incidents,50000,Crime incidents 2023,2025-08-30
+311_requests,25000,311 service requests,2025-08-30
+health_indicators,15,Health outcomes by neighborhood,2025-08-30
+school_attendance,12,School chronic absenteeism,2025-08-30
+health_proxies,15,Health access & environmental justice,2025-08-30
+biometric_stress,15,Composite biometric stress proxies,2025-08-30
+air_quality,5,Environmental monitoring sites,2025-08-30
+census_tracts,100,Geographic boundaries,2025-08-30

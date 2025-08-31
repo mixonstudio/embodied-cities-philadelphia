@@ -1,0 +1,53 @@
+{
+  "project": {
+    "name": ["Embodied Cities: Philadelphia Pilot"],
+    "location": ["Central Philadelphia District (Central_Central)"],
+    "timeline": ["2025-2028 (3-year pilot)"],
+    "population": [1200]
+  },
+  "baseline_2025": {
+    "neighborhood": ["Central_Central"],
+    "stress_index": [9.6594],
+    "crime_incidents": [17543],
+    "service_requests": [7939],
+    "healthcare_cost_per_capita": [12567],
+    "depression_rate": [24],
+    "frequent_stress_rate": [16],
+    "poor_health_rating": [21]
+  },
+  "intervention_2025_2028": {
+    "total_investment": [650000],
+    "investment_formatted": ["$650,000"],
+    "annual_average": [216667],
+    "duration": ["3 years"],
+    "approach": ["Sensing network + AI platform + community engagement"],
+    "components": {
+      "sensors": ["IoT environmental and biometric monitoring"],
+      "ai_platform": ["Real-time stress pattern recognition"],
+      "community_engagement": ["Participatory workshops and co-design"],
+      "city_integration": ["Policy recommendation dashboard"]
+    }
+  },
+  "projected_outcomes_2028": {
+    "stress_index_improvement": ["9.66 → 7.24 (-25%)"],
+    "healthcare_savings_per_capita": [503],
+    "depression_rate_improvement": ["24% → 18% (-25%)"],
+    "stress_rate_improvement": ["16% → 12% (-25%)"],
+    "community_satisfaction": ["Significant improvement in neighborhood well-being metrics"]
+  },
+  "roi_analysis": {
+    "annual_savings": [638198],
+    "annual_savings_formatted": ["$638,198"],
+    "five_year_savings": [3190990],
+    "net_benefit": [2540990],
+    "net_benefit_formatted": ["$2,540,990"],
+    "roi_percentage": [391],
+    "payback_period": [1],
+    "cost_per_resident": [542]
+  },
+  "methodology": {
+    "data_sources": ["Philadelphia Department of Public Health, OpenDataPhilly crime/311 data, national healthcare spending"],
+    "analysis_approach": ["Statistical clustering, composite stress indexing, conservative ROI modeling"],
+    "limitations": ["Pilot scale, requires validation through implementation"]
+  }
+}

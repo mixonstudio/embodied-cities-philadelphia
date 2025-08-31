@@ -1,0 +1,6 @@
+year,phase,depression_rate,anxiety_rate,chronic_absenteeism,life_expectancy_gap,embodied_stress_index,baseline_cost,stress_cost_multiplier,healthcare_cost_per_capita,annual_savings_per_capita,life_expectancy_improvement
+2025,Baseline,24,18,36.6,19.7,8.42,21280,1.2105,25759.44,-4479.439999999999,0
+2028,Post-Pilot,21.6,16.1,30.5,18.8,7.16,21280,1.179,25089.120000000003,-3809.1200000000026,0.37799999999999995
+2032,Post-Expansion,18.9,14.2,25.1,17.2,6.32,21280,1.158,24642.239999999998,-3362.239999999998,0.6299999999999999
+2040,Post-Citywide,16.1,12.1,18.8,14.8,5.47,21280,1.13675,24190.039999999997,-2910.0399999999972,0.885
+2050,Mature System,13.7,10.3,14.2,11.5,4.63,21280,1.11575,23743.16,-2463.16,1.137

@@ -1,0 +1,6 @@
+neighborhood_id,lat_zone,lon_zone,composite_stress_index,total_crimes,violent_crime_rate,total_311_requests
+North_WestCentral,North,WestCentral,0.09374403873496744,258,15.11627906976744,151
+North_EastCentral,North,EastCentral,0.5579377750114605,1254,15.390749601275916,634
+North_East,North,East,1.1728431544593534,1794,17.447045707915272,749
+Central_East,Central,East,2.400565458734056,626,25.399361022364214,324
+North_Central,North,Central,2.4043209529854472,1024,24.609375,545

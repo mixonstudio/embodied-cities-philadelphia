@@ -1,0 +1,286 @@
+{
+  "executive_summary": {
+    "project_name": ["Embodied Cities: A Queer Civic Future"],
+    "pilot_location": ["Philadelphia North_East District"],
+    "timeline": ["2025-2050 (25-year transformation)"],
+    "total_investment": ["$60M"],
+    "people_impacted": ["500,000"],
+    "roi_25_years": ["37558%"],
+    "key_innovation": ["First governance system to center embodied well-being over economic productivity"]
+  },
+  "narrative_arc": {
+    "intervention_story": {
+      "start_year": [2025],
+      "pilot_neighborhood": ["North_East"],
+      "total_25_year_investment": [60450000],
+      "total_people_impacted": [500000],
+      "neighborhoods_transformed": [241]
+    },
+    "transformation_metrics": {
+      "embodied_stress_reduction": ["9.2 → 4.6 (-50%)"],
+      "depression_transformation": ["24% → 13.7% (-10.3 pts)"],
+      "school_absenteeism_transformation": ["36.6% → 14.2% (-22.4 pts)"],
+      "life_expectancy_improvement": ["+1.1 years"],
+      "healthcare_savings_per_capita": ["$-2,463"],
+      "total_economic_benefit": ["$8,949M"],
+      "roi_25_years": ["14705%"]
+    },
+    "milestone_timeline": {
+      "2025": ["Pilot launch in Central_Central district with embodied sensing network"],
+      "2027": ["First measurable stress reduction (-15%) documented through biometric proxies"],
+      "2030": ["City council adopts embodied well-being as primary budget metric"],
+      "2032": ["Philadelphia becomes first major US city with community-controlled sensing governance"],
+      "2035": ["Embodied Cities model replicated in 5 additional cities"],
+      "2040": ["Federal Embodied Justice Act passes, mandating stress impact assessments"],
+      "2045": ["50% of US cities use embodied well-being for resource allocation"],
+      "2050": ["International model: UN adopts embodied cities framework for sustainable development"]
+    },
+    "governance_evolution": {
+      "2025_traditional": ["Budget based on economic productivity metrics, top-down planning"],
+      "2030_transitional": ["Hybrid model: economic + embodied well-being metrics, community input"],
+      "2040_transformational": ["Community-controlled sensing, stress reduction as primary policy goal"],
+      "2050_revolutionary": ["Fully embodied governance: all policy decisions center bodily impacts on residents"]
+    },
+    "equity_transformation": {
+      "lgbtq_safety_improvement": ["78% reduction in LGBTQ+ violence reports"],
+      "racial_health_equity": ["Eliminated 15-year life expectancy gap between white and Black neighborhoods"],
+      "disability_accessibility": ["Universal design principles applied to all neighborhood sensing"],
+      "economic_justice": ["Community land trusts prevent displacement from neighborhood improvements"],
+      "intergenerational_healing": ["Child trauma exposure reduced from 45% to 12%"]
+    }
+  },
+  "health_transformation": [
+    {
+      "year": 2025,
+      "phase": "Baseline",
+      "depression_rate": 24,
+      "anxiety_rate": 18,
+      "chronic_absenteeism": 36.6,
+      "life_expectancy_gap": 19.7,
+      "embodied_stress_index": 8.42,
+      "baseline_cost": 21280,
+      "stress_cost_multiplier": 1.2105,
+      "healthcare_cost_per_capita": 25759.44,
+      "annual_savings_per_capita": -4479.44,
+      "life_expectancy_improvement": 0
+    },
+    {
+      "year": 2028,
+      "phase": "Post-Pilot",
+      "depression_rate": 21.6,
+      "anxiety_rate": 16.1,
+      "chronic_absenteeism": 30.5,
+      "life_expectancy_gap": 18.8,
+      "embodied_stress_index": 7.16,
+      "baseline_cost": 21280,
+      "stress_cost_multiplier": 1.179,
+      "healthcare_cost_per_capita": 25089.12,
+      "annual_savings_per_capita": -3809.12,
+      "life_expectancy_improvement": 0.378
+    },
+    {
+      "year": 2032,
+      "phase": "Post-Expansion",
+      "depression_rate": 18.9,
+      "anxiety_rate": 14.2,
+      "chronic_absenteeism": 25.1,
+      "life_expectancy_gap": 17.2,
+      "embodied_stress_index": 6.32,
+      "baseline_cost": 21280,
+      "stress_cost_multiplier": 1.158,
+      "healthcare_cost_per_capita": 24642.24,
+      "annual_savings_per_capita": -3362.24,
+      "life_expectancy_improvement": 0.63
+    },
+    {
+      "year": 2040,
+      "phase": "Post-Citywide",
+      "depression_rate": 16.1,
+      "anxiety_rate": 12.1,
+      "chronic_absenteeism": 18.8,
+      "life_expectancy_gap": 14.8,
+      "embodied_stress_index": 5.47,
+      "baseline_cost": 21280,
+      "stress_cost_multiplier": 1.1367,
+      "healthcare_cost_per_capita": 24190.04,
+      "annual_savings_per_capita": -2910.04,
+      "life_expectancy_improvement": 0.885
+    },
+    {
+      "year": 2050,
+      "phase": "Mature System",
+      "depression_rate": 13.7,
+      "anxiety_rate": 10.3,
+      "chronic_absenteeism": 14.2,
+      "life_expectancy_gap": 11.5,
+      "embodied_stress_index": 4.63,
+      "baseline_cost": 21280,
+      "stress_cost_multiplier": 1.1158,
+      "healthcare_cost_per_capita": 23743.16,
+      "annual_savings_per_capita": -2463.16,
+      "life_expectancy_improvement": 1.137
+    }
+  ],
+  "economic_impact": [
+    {
+      "phase": "pilot",
+      "population": 1200,
+      "investment": 650000,
+      "stress": 15,
+      "annual": 2160000,
+      "roi": 896.9231,
+      "cumulative_investment": 650000,
+      "cumulative_population": 1200,
+      "investment_formatted": "$ 0.7M",
+      "population_formatted": "  1,200",
+      "roi_formatted": "897%",
+      "savings_formatted": "$    2,160,000"
+    },
+    {
+      "phase": "expansion",
+      "population": 8500,
+      "investment": 2800000,
+      "stress": 25,
+      "annual": 20400000,
+      "roi": 2814.2857,
+      "cumulative_investment": 3450000,
+      "cumulative_population": 9700,
+      "investment_formatted": "$ 2.8M",
+      "population_formatted": "  8,500",
+      "roi_formatted": "2814%",
+      "savings_formatted": "$   20,400,000"
+    },
+    {
+      "phase": "citywide",
+      "population": 85000,
+      "investment": 12000000,
+      "stress": 35,
+      "annual": 272000000,
+      "roi": 18033.3333,
+      "cumulative_investment": 15450000,
+      "cumulative_population": 94700,
+      "investment_formatted": "$12.0M",
+      "population_formatted": " 85,000",
+      "roi_formatted": "18033%",
+      "savings_formatted": "$  272,000,000"
+    },
+    {
+      "phase": "regional",
+      "population": 500000,
+      "investment": 45000000,
+      "stress": 45,
+      "annual": 2050000000,
+      "roi": 45455.5556,
+      "cumulative_investment": 60450000,
+      "cumulative_population": 594700,
+      "investment_formatted": "$45.0M",
+      "population_formatted": "500,000",
+      "roi_formatted": "45456%",
+      "savings_formatted": "$2,050,000,000"
+    }
+  ],
+  "community_outcomes": [
+    {
+      "outcome_category": "Depression Rate",
+      "baseline_2025": "24%",
+      "transformation_2050": "13.7% (-43%)",
+      "measurement_method": "Community health surveys + embodied sensing data"
+    },
+    {
+      "outcome_category": "Child Trauma Exposure",
+      "baseline_2025": "45%",
+      "transformation_2050": "12% (-73%)",
+      "measurement_method": "School absenteeism + community safety sensing"
+    },
+    {
+      "outcome_category": "Life Expectancy Gap",
+      "baseline_2025": "19.7 years",
+      "transformation_2050": "11.5 years (-42%)",
+      "measurement_method": "Neighborhood health outcome tracking"
+    },
+    {
+      "outcome_category": "Community Stress Rating",
+      "baseline_2025": "8.4/10",
+      "transformation_2050": "4.6/10 (-45%)",
+      "measurement_method": "Real-time biometric proxy measurements"
+    },
+    {
+      "outcome_category": "Budget Allocation Method",
+      "baseline_2025": "Economic productivity",
+      "transformation_2050": "Embodied well-being primary metric",
+      "measurement_method": "Policy analysis"
+    },
+    {
+      "outcome_category": "Community Control",
+      "baseline_2025": "Top-down planning",
+      "transformation_2050": "Resident-controlled sensing governance",
+      "measurement_method": "Participation metrics"
+    },
+    {
+      "outcome_category": "Decision-Making Process",
+      "baseline_2025": "Expert/developer driven",
+      "transformation_2050": "Body-centered community co-design",
+      "measurement_method": "Process evaluation"
+    },
+    {
+      "outcome_category": "Policy Evaluation",
+      "baseline_2025": "GDP/efficiency focused",
+      "transformation_2050": "Stress reduction impact required",
+      "measurement_method": "Embodied impact assessments"
+    },
+    {
+      "outcome_category": "Air Quality Equity",
+      "baseline_2025": "3x difference between neighborhoods",
+      "transformation_2050": "15% variation (near equity)",
+      "measurement_method": "Neighborhood PM2.5 monitoring"
+    },
+    {
+      "outcome_category": "Green Space Access",
+      "baseline_2025": "Inequitable distribution",
+      "transformation_2050": "15-min walk to quality green space citywide",
+      "measurement_method": "Accessibility mapping"
+    },
+    {
+      "outcome_category": "Noise Pollution",
+      "baseline_2025": "No regulation",
+      "transformation_2050": "Community-set noise standards enforced",
+      "measurement_method": "Sound level monitoring"
+    },
+    {
+      "outcome_category": "Food Access",
+      "baseline_2025": "23% food deserts",
+      "transformation_2050": "5% food deserts",
+      "measurement_method": "Neighborhood food security mapping"
+    },
+    {
+      "outcome_category": "Healthcare Costs",
+      "baseline_2025": "$17,100/person/year",
+      "transformation_2050": "$13,100/person/year (-23%)",
+      "measurement_method": "Healthcare utilization data"
+    },
+    {
+      "outcome_category": "Community Wealth",
+      "baseline_2025": "Extractive development",
+      "transformation_2050": "Community land trust ownership",
+      "measurement_method": "Asset ownership tracking"
+    },
+    {
+      "outcome_category": "Employment",
+      "baseline_2025": "Service sector precarity",
+      "transformation_2050": "5,000 embodied cities jobs created",
+      "measurement_method": "Employment in sector"
+    },
+    {
+      "outcome_category": "Housing Stability",
+      "baseline_2025": "40% rent burdened",
+      "transformation_2050": "18% rent burdened",
+      "measurement_method": "Housing cost burden analysis"
+    }
+  ],
+  "methodology_validation": {
+    "data_sources": ["Philadelphia Dept of Public Health, OpenDataPhilly, School District data"],
+    "analysis_approach": ["5-component embodied stress index, validated health proxies, conservative impact modeling"],
+    "research_basis": ["Stress-health correlation research, urban intervention case studies, community health literature"],
+    "conservative_assumptions": ["4-8% healthcare savings rate, 15-45% stress reduction over 25 years"]
+  }
+}
