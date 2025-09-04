@@ -176,7 +176,7 @@
         
         .philadelphia-stats {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            grid-template-columns: 1fr 1fr;
             gap: 1.2rem;
             margin: 2rem 0;
         }
@@ -356,7 +356,7 @@
         
         .governance-principles {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-template-columns: 1fr 1fr;
             gap: 1rem;
             margin-top: 1rem;
         }
@@ -456,6 +456,17 @@
             max-width: 400px;
             margin-left: auto;
             margin-right: auto;
+        }
+        
+        .district-marker {
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .district-marker:hover {
+            stroke: var(--deep-purple);
+            stroke-width: 2;
+            opacity: 1;
         }
         
         .neighborhood {
@@ -642,25 +653,36 @@
             </div>
 
             <div class="data-visualization">
-                <div class="viz-title">Philadelphia Embodied Stress Map (2025 Baseline)</div>
-                <div class="stress-map">
-                    <div class="neighborhood stress-medium">D1<br>7.2</div>
-                    <div class="neighborhood stress-high">D2<br>8.1</div>
-                    <div class="neighborhood stress-medium">D3<br>6.8</div>
-                    <div class="neighborhood stress-low">D4<br>4.9</div>
-                    <div class="neighborhood stress-low">D5<br>4.2</div>
-                    
-                    <div class="neighborhood stress-medium">D6<br>5.9</div>
-                    <div class="neighborhood stress-very-high">D7<br>8.4</div>
-                    <div class="neighborhood stress-medium">D8<br>6.2</div>
-                    <div class="neighborhood stress-low">D9<br>3.8</div>
-                    <div class="neighborhood stress-low">D10<br>3.5</div>
-                    
-                    <div class="neighborhood stress-medium">D11<br>6.5</div>
-                    <div class="neighborhood stress-medium">D12<br>6.1</div>
-                    <div class="neighborhood stress-medium">D13<br>5.8</div>
-                    <div class="neighborhood stress-low">D14<br>4.1</div>
-                    <div class="neighborhood stress-low">D15<br>3.9</div>
+                <div class="viz-title">Philadelphia Embodied Stress Analysis (2025 Baseline)</div>
+                <div style="position: relative; width: 100%; max-width: 500px; margin: 0 auto;">
+                    <svg viewBox="0 0 400 300" style="width: 100%; height: auto;">
+                        <!-- Philadelphia city outline -->
+                        <path d="M50 80 L80 60 L150 70 L220 85 L280 95 L320 110 L350 140 L340 180 L310 220 L250 240 L180 235 L120 225 L80 200 L60 160 Z" 
+                            fill="rgba(255,255,255,0.8)" stroke="var(--medium-blue)" stroke-width="2"/>
+            
+                        <!-- District stress indicators as colored circles -->
+                        <circle cx="120" cy="100" r="8" fill="var(--medium-blue)" opacity="0.8" class="district-marker" data-district="D1" data-stress="7.2"/>
+                        <circle cx="160" cy="110" r="10" fill="var(--bright-purple)" opacity="0.8" class="district-marker" data-district="D2" data-stress="8.1"/>
+                        <circle cx="200" cy="95" r="8" fill="var(--medium-blue)" opacity="0.8" class="district-marker" data-district="D3" data-stress="6.8"/>
+                        <circle cx="240" cy="105" r="6" fill="var(--bright-cyan)" opacity="0.8" class="district-marker" data-district="D4" data-stress="4.9"/>
+                        <circle cx="280" cy="115" r="5" fill="var(--bright-cyan)" opacity="0.8" class="district-marker" data-district="D5" data-stress="4.2"/>
+            
+                        <circle cx="110" cy="140" r="7" fill="var(--medium-blue)" opacity="0.8" class="district-marker" data-district="D6" data-stress="5.9"/>
+                        <circle cx="170" cy="150" r="12" fill="var(--deep-purple)" opacity="0.9" class="district-marker" data-district="D7" data-stress="8.4"/>
+                        <circle cx="210" cy="145" r="8" fill="var(--medium-blue)" opacity="0.8" class="district-marker" data-district="D8" data-stress="6.2"/>
+                        <circle cx="250" cy="155" r="5" fill="var(--bright-cyan)" opacity="0.8" class="district-marker" data-district="D9" data-stress="3.8"/>
+                        <circle cx="290" cy="165" r="4" fill="var(--bright-cyan)" opacity="0.8" class="district-marker" data-district="D10" data-stress="3.5"/>
+            
+                        <circle cx="130" cy="190" r="8" fill="var(--medium-blue)" opacity="0.8" class="district-marker" data-district="D11" data-stress="6.5"/>
+                        <circle cx="180" cy="200" r="7" fill="var(--medium-blue)" opacity="0.8" class="district-marker" data-district="D12" data-stress="6.1"/>
+                        <circle cx="220" cy="195" r="7" fill="var(--medium-blue)" opacity="0.8" class="district-marker" data-district="D13" data-stress="5.8"/>
+                        <circle cx="260" cy="205" r="5" fill="var(--bright-cyan)" opacity="0.8" class="district-marker" data-district="D14" data-stress="4.1"/>
+                        <circle cx="290" cy="195" r="5" fill="var(--bright-cyan)" opacity="0.8" class="district-marker" data-district="D15" data-stress="3.9"/>
+            
+                        <!-- Pilot district highlight -->
+                        <circle cx="170" cy="150" r="16" fill="none" stroke="var(--deep-purple)" stroke-width="3" stroke-dasharray="5,5" opacity="0.8"/>
+                        <text x="170" y="130" text-anchor="middle" font-size="10" fill="var(--deep-purple)" font-weight="600">PILOT</text>
+                    </svg>
                 </div>
                 <div class="legend">
                     <div class="legend-item">
@@ -681,7 +703,7 @@
                     </div>
                 </div>
                 <p style="text-align: center; margin-top: 1rem; font-size: 0.9rem; color: var(--text-light);">
-                    D7 = Pilot district (highest stress) | Stress index combines crime, environmental, child wellbeing, health access, and biometric proxies
+                    D7 = Pilot district (highest stress) | Circle size represents stress intensity
                 </p>
             </div>
         </section>
@@ -715,48 +737,6 @@
                         <p><strong>Policy integration:</strong> City budget decisions require embodied stress impact assessments</p>
                         <p><strong>Community control:</strong> District 7 residents vote on how their neighborhood's stress data is used and shared</p>
                         <p><strong>Scaling preparation:</strong> Document methodology for replication in Districts
-         <section class="section fade-in" data-page="07">
-            <h2 class="section-title">The Governance Revolution in Practice</h2>
-            <div class="archive-code">Policy Transformation | Community Data Sovereignty | Care-Centered Decision Making</div>
-            
-            <div class="intro-text">
-                The real revolution wasn't the technology - it was how communities used embodied data to fundamentally reshape power. By 2030, District 7's community assemblies controlled a $2.3M annual budget allocation based entirely on stress reduction priorities identified through their own sensing network.
-            </div>
-            
-            <div class="queer-governance">
-                <div class="queer-governance-title">How Queer Governance Principles Transformed Urban Policy</div>
-                
-                <div style="margin-bottom: 1.5rem;">
-                    <p style="margin-bottom: 1rem; color: var(--text-dark);">Traditional city planning assumes all bodies experience space identically and optimizes for economic productivity over wellbeing. Queer governance recognizes that marginalized communities - LGBTQ+ people, people of color, disabled residents, working families - navigate urban space differently and often bear disproportionate stress from "neutral" policy decisions.</p>
-                    
-                    <p style="margin-bottom: 1rem; color: var(--text-dark);">Embodied sensing enabled governance that acknowledges these differences and centers care over efficiency. Instead of asking "How do we maximize tax revenue?" communities learned to ask "How do different bodies feel in this space, and how can we reduce harm?"</p>
-                </div>
-                
-                <div class="governance-principles">
-                    <div class="principle">
-                        <div class="principle-title">Community Data Sovereignty</div>
-                        <div class="principle-desc">Residents own their neighborhood's embodied data. No corporate or government surveillance - community assemblies decide how stress data gets used, stored, and shared.</div>
-                    </div>
-                    <div class="principle">
-                        <div class="principle-title">Care-Centered Resource Allocation</div>
-                        <div class="principle-desc">City budget decisions based on stress reduction potential rather than economic development. Public resources flow toward healing and community care, not growth and productivity.</div>
-                    </div>
-                    <div class="principle">
-                        <div class="principle-title">Intersectional Impact Analysis</div>
-                        <div class="principle-desc">Policy decisions require assessment of differential impacts on different bodies. A new development might reduce stress for some while increasing displacement anxiety for others.</div>
-                    </div>
-                    <div class="principle">
-                        <div class="principle-title">Trauma-Informed Infrastructure</div>
-                        <div class="principle-desc">Urban design that acknowledges historical harm and actively works to create healing spaces for communities that have experienced systemic violence and neglect.</div>
-                    </div>
-                </div>
-                
-                <div style="background: rgba(255, 255, 255, 0.8); padding: 1.5rem; border-radius: 8px; margin-top: 1.5rem;">
-                    <h4 style="color: var(--deep-purple); margin-bottom: 1rem; font-family: 'Space Grotesk', sans-serif;">Real Example from District 7 (2035):</h4>
-                    <p style="color: var(--text-dark); font-style: italic; line-height: 1.6;">"When embodied stress data showed transgender residents experienced 40% higher anxiety near the main bus terminal, the community assembly voted to reallocate $180K from a planned parking expansion to fund improved lighting, gender-neutral bathrooms, and a community safety ambassador program. Traditional planning would have built the parking garage. Embodied governance chose care over cars."</p>
-                </div>
-            </div>
-        </section>
 
         <section class="section fade-in" data-page="08">
             <h2 class="section-title">Implementation Readiness Assessment</h2>
